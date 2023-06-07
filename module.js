@@ -21,18 +21,14 @@ function menor(i) {
     /// creo las variables que usare despues
 
     let lista = i; //lista existe para no enredarme
-    let menor = mayor(i)
+    let menor = 33300
 
+//recorro el array a la inversa
+    for (let i = lista.length ; i >= 0; i--) {
+        menor = lista[i]       
 
-
-    for (let i = 0; i < lista.length; i++) {
-
-        if (menor > lista[i]) {
-            menor = menor - lista[i]
-        }
-
-        return
     }
+    return menor
 }
 
 
